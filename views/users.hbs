@@ -3,7 +3,7 @@
 {{!-- предполагаем, что при рендеринге этой страницы к нам придет массив юзеров --}}
 {{#each users}}
   <div>
-    <a href="posts/{{this.name}}">{{this.name}}</a>
+    <a href="posts/?name={{this.name}}&q=true">{{this.name}}</a>
   </div>
 {{/each}}
 

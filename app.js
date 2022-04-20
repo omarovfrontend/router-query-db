@@ -10,6 +10,7 @@ const PORT = 3000;
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
+app.use(express.static('public'));  //дает возможность получить любой файл из этой папки
 app.use(express.json());
 app.use(express.urlencoded({extends: true}));
 
