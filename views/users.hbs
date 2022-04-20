@@ -1,0 +1,12 @@
+<h1>All users!</h1>
+
+{{!-- предполагаем, что при рендеринге этой страницы к нам придет массив юзеров --}}
+{{#each users}}
+  <div>
+    <a href="posts/{{this.name}}">{{this.name}}</a>
+  </div>
+{{/each}}
+
+<div>
+  <a href="posts/all">|||||ALL|||||</a>
+</div>

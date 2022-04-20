@@ -1,0 +1,11 @@
+<h1>Posts</h1>
+
+{{#each posts}}
+  <div class="wrapper">
+    <div class="post">
+      <h1>{{this.title}}</h1>
+      <p>{{this.body}}</p>
+      <i>{{author}}</i>
+    </div>
+  </div>
+{{/each}}
